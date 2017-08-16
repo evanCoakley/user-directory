@@ -9,22 +9,13 @@
 </head>
 
 <body>
-    home!
-    <div>
-
-         {{#user}} 
-            {{name}} <br> 
-            {{favColor}} 
-         {{/user}}
-         {{^user}}
-            No user available
-         {{/user}}
+    
+    
     </div>
 
     <div class="users">
     {{#users}}
-        <img src={{avatar}}/>
-
+        <img src={{avatar}}/><br>
         Name: {{name}} <br> 
         Job: {{job}}{{^job}}For Hire{{/job}}<br>
         Company: {{company}} <br><br>
