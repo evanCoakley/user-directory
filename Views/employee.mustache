@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="/main.css">
 </head>
 
 <body>
     
     
-    </div>
+    <h1>Index</h1><br> <br>
 
     <div class="users">
     {{#users}}
+    <div class="boxes">
         <img src={{avatar}}/><br>
-        Name: {{name}} <br> 
-        Job: {{job}}{{^job}}For Hire{{/job}}<br>
-        Company: {{company}} <br><br>
+         {{name}} <br> 
+         {{job}}{{^job}}For Hire{{/job}}<br>
+         {{company}} <br><br>
+         </div>
     {{/users}}
     {{^users}}
          No users available
     {{/users}}
-    <div>
+    </div>
     <script src="./main.js"></script>
 </body>
 

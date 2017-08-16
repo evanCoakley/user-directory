@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes {
+    margin: 20px;
+    width: 150px;
+    flex: 1 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+    border: solid lightblue;
+    border-width: .5px;
+}

@@ -8,6 +8,8 @@ app.engine("mustache", mustacheExpress());
 app.set("views", "./views");
 app.set("view engine", "mustache");
 
+app.use(express.static("./public"))
+
 app.get("/", (req, res) => {
     res.render('employee', data);
 
