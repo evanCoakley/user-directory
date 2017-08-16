@@ -16,6 +16,7 @@
 
     <div class="users">
     {{#users}}
+    <a href="/{{name}}">
     <div class="boxes">
         <img src={{avatar}}/><br>
          {{name}} <br> 
@@ -27,6 +28,7 @@
          No users available
     {{/users}}
     </div>
+    </a>
     <script src="./main.js"></script>
 </body>
 

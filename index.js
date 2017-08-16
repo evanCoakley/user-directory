@@ -15,6 +15,17 @@ app.get("/", (req, res) => {
 
 });
 
+app.get("/:name", (req, res) => {
+
+
+    // get and use url name parameter to find the matching user in the users array. 
+    // use that object to render the profile page.
+    res.render('profile', data)
+});
+
+
+
+
 
 
 
