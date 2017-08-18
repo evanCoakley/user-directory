@@ -16,14 +16,16 @@ app.get("/", (req, res) => {
 
 });
 
-app.get("/", (req, res) => {
+app.get("/profile/:id", (req, res) => {
     //create variable 
     //Look at href on emp. 
     //Find Indentifier(individuals... app.find) for parsing through data 
 
-    let checkData = users.find(user => user.username === reqUsername);
+    let reqId = req.params.id;
+    let foundUser = data.users.find(user => user.id == reqId);
+    res.render('profile', { data: foundUser });
 
-    res.render('profile', dataPage);
+
 });
 
 

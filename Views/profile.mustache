@@ -14,13 +14,15 @@
     <div class="profiles">
 
         <div class="pbox">
-            <img src={{user.avatar}}/>
-            {{user.name}} <br>
-            {{user.city}}, {{user.country}}, {{user.job}}, {{company}} <br>
-            {{user.email}}, {{user.phone}}<br>
-            Education: {{user.university}}<br>
-            Skills: {{user.skills}}
+        {{#data}}
+            <img src="{{avatar}}"/>
+            {{name}} <br>
+            {{city}}, {{country}}, {{job}}, {{company}} <br>
+            {{email}}, {{phone}}<br>
+            Education: {{university}}<br>
+            Skills: {{skills}}
         </div>
+        {{/data}}
     </div>    
         <script src="./main.js"></script>
 </body>
