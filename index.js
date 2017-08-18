@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express();
+const bodyParser = require("body-parser");
 var data = require("./data.js");
 const mustacheExpress = require("mustache-express");
 // set up rendering engine mustache-express
@@ -8,20 +9,29 @@ app.engine("mustache", mustacheExpress());
 app.set("views", "./views");
 app.set("view engine", "mustache");
 
-app.use(express.static("./public"))
+app.use(express.static("./public"));
 
 app.get("/", (req, res) => {
     res.render('employee', data);
 
 });
 
-app.get("/:name", (req, res) => {
+app.get("/", (req, res) => {
+    //create variable 
+    //Look at href on emp. 
+    //Find Indentifier(individuals... app.find) for parsing through data 
 
+    let checkData = users.find(user => user.username === reqUsername);
 
-    // get and use url name parameter to find the matching user in the users array. 
-    // use that object to render the profile page.
-    res.render('profile', data)
+    res.render('profile', dataPage);
 });
+
+
+
+
+
+// get and use url name parameter to find the matching user in the users array. 
+// use that object to render the profile page.
 
 
 
