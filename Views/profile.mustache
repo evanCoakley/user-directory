@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+     <link rel="stylesheet" href="/profile.css">
+   
 </head>
 
 <body>
-    <h1>Profiles</h1>
+    <h1>Profile</h1>
 
     <div class="profiles">
 
         <div class="pbox">
         {{#data}}
             <img src="{{avatar}}"/>
-            {{name}} <br>
-            {{city}}, {{country}}, {{job}}, {{company}} <br>
+
+            <h2>{{name}}</h2> <br>
+            <span>{{address.city}} {{address.country}} | {{job}} {{company}}</span><br>
             {{email}}, {{phone}}<br>
             Education: {{university}}<br>
             Skills: {{skills}}

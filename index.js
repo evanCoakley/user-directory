@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express();
 const bodyParser = require("body-parser");
-var data = require("./data.js");
+const data = require("./data.js");
 const mustacheExpress = require("mustache-express");
 // set up rendering engine mustache-express
 
